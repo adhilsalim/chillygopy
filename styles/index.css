@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
+
+:root {
+  --image-blur: 2px;
+}
+
+.bungee-spice-regular {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#hero-subtitle {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.bg-img-container .col-12 {
+  padding: 0px;
+}
+
+.hero-section {
+  position: relative;
+}
+
+.hero-section .glass-mask {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(var(--image-blur));
+  -webkit-backdrop-filter: blur(var(--image-blur));
+  border-radius: 10px;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.text-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
